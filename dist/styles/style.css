@@ -1,12 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0; }
-
 #top {
   width: 100%;
   float: left;
-  background: #333;
+  background: #222;
   line-height: 40px; }
 
 .wrapper {
@@ -20,11 +15,9 @@ ul#menu {
   list-style: none;
   margin: 0;
   float: right; }
-
-ul#menu li {
-  float: left;
-  padding: 0 20px; }
-
-ul#menu li a {
-  text-decoration: none;
-  color: #fff; }
+  ul#menu li {
+    float: left;
+    padding: 0 20px; }
+    ul#menu li a {
+      text-decoration: none;
+      color: #fff; }

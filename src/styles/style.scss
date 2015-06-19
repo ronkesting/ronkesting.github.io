@@ -1,8 +1,4 @@
-* {
-	margin:0;
-	padding:0;
-	border:0;
-}
+$primary-color: #222;
 
 body {
 	
@@ -11,7 +7,7 @@ body {
 #top {
     width:100%;
     float:left;
-    background:#333;
+    background:$primary-color;
     line-height:40px;
 }
 .wrapper {
@@ -25,12 +21,14 @@ ul#menu {
     list-style:none;
     margin:0;
     float:right;
-}
-ul#menu li {
-    float:left;
-    padding:0 20px;
-}
-ul#menu li a {
-    text-decoration:none;
-    color:#fff;
+	
+	li {
+		float:left;
+		padding:0 20px;
+		
+		a {
+			text-decoration:none;
+			color:#fff;
+		}
+	}
 }
