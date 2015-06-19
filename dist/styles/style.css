@@ -1,3 +1,6 @@
+body {
+  font: 15px/24px "Open Sans", sans-serif; }
+
 #top {
   width: 100%;
   float: left;
@@ -5,7 +8,8 @@
   line-height: 40px; }
 
 .wrapper {
-  width: 1060px;
+  max-width: 1060px;
+  width: 90%;
   margin: 0 auto; }
 
 #logo {
@@ -20,4 +24,5 @@ ul#menu {
     padding: 0 20px; }
     ul#menu li a {
       text-decoration: none;
-      color: #fff; }
+      color: #fff;
+      font-weight: bold; }
