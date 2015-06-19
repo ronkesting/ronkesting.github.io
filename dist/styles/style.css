@@ -1,3 +1,6 @@
+*, *:before, *:after {
+  box-sizing: border-box; }
+
 body {
   font: 15px/24px "Open Sans", sans-serif; }
 
@@ -26,3 +29,39 @@ ul#menu {
       text-decoration: none;
       color: #fff;
       font-weight: bold; }
+
+#slideshow {
+  margin: 0 0 30px; }
+  #slideshow img {
+    width: 100%;
+    height: auto; }
+
+.row {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (max-width: 767px) {
+    .row {
+      display: block; } }
+  .row .col {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background: #eee;
+    margin: 0 30px 30px 0;
+    padding: 20px; }
+    @media (max-width: 767px) {
+      .row .col {
+        width: 100%; } }
+  .row .col:last-child {
+    margin-right: 0; }
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 0 25px;
+  line-height: 36px; }
+
+p {
+  margin: 0 0 20px; }
