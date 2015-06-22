@@ -7,6 +7,9 @@ $primary-color: #222;
 body {
     font: 15px/24px 'Open Sans', sans-serif;
 }
+img {
+    display:block;
+}
 
 #top {
     width:100%;
@@ -23,10 +26,20 @@ body {
 #logo {
     float:left;
     padding:15px 0;
+
+    @media (max-width: 767px) {
+        width:100%;
+        text-align:center;
+    }
 }
 #logo img {
    width:300px;
    height:auto; 
+
+   @media (max-width: 767px) {
+        width:80%;
+        display:inline-block;
+    }
 }
 
 ul#menu {
@@ -42,7 +55,7 @@ ul#menu {
             text-decoration:none;
             color:#fff;
             font-weight:bold;
-            line-height: 65px;
+            line-height: 59px;
         }
     }
 }
