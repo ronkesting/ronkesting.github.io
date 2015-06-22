@@ -7,8 +7,7 @@ body {
 #top {
   width: 100%;
   float: left;
-  background: #222;
-  line-height: 40px; }
+  background: #222; }
 
 .wrapper {
   max-width: 1060px;
@@ -16,7 +15,12 @@ body {
   margin: 0 auto; }
 
 #logo {
-  float: left; }
+  float: left;
+  padding: 15px 0; }
+
+#logo img {
+  width: 300px;
+  height: auto; }
 
 ul#menu {
   list-style: none;
@@ -28,7 +32,8 @@ ul#menu {
     ul#menu li a {
       text-decoration: none;
       color: #fff;
-      font-weight: bold; }
+      font-weight: bold;
+      line-height: 65px; }
 
 #slideshow {
   margin: 0 0 30px; }

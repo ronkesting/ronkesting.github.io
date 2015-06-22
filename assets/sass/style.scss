@@ -12,7 +12,6 @@ body {
     width:100%;
     float:left;
     background:$primary-color;
-    line-height:40px;
 }
 
 .wrapper {
@@ -23,6 +22,11 @@ body {
 
 #logo {
     float:left;
+    padding:15px 0;
+}
+#logo img {
+   width:300px;
+   height:auto; 
 }
 
 ul#menu {
@@ -38,6 +42,7 @@ ul#menu {
             text-decoration:none;
             color:#fff;
             font-weight:bold;
+            line-height: 65px;
         }
     }
 }

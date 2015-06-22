@@ -12,13 +12,13 @@ gulp.task('webserver', function() {
 });
 
 gulp.task('styles', function() {
-    return gulp.src('src/styles/*.scss')
+    return gulp.src('assets/sass/*.scss')
         .pipe(sass({ style: 'expanded' }))
         .pipe(autoprefixer({browsers: ['last 2 versions']}))
-        .pipe(gulp.dest('dist/styles'))
+        .pipe(gulp.dest('assets/css'))
         .pipe(rename({suffix: '.min'}))
         .pipe(minifycss())
-        .pipe(gulp.dest('dist/styles'))
+        .pipe(gulp.dest('assets/css'))
         .pipe(connect.reload());
 });
 
@@ -29,7 +29,7 @@ gulp.task('html', function() {
 
 //Watch task
 gulp.task('watch',function() {
-    gulp.watch('src/styles/**/*.scss',['styles']);
+    gulp.watch('assets/sass/**/*.scss',['styles']);
     gulp.watch('index.html', ['html']);
 });
 
